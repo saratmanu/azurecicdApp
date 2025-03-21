@@ -16,7 +16,7 @@ import com.example.dto.LoginRequest;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class AuthController {
 	private final AuthService authService;
     public AuthController(AuthService authService) {
